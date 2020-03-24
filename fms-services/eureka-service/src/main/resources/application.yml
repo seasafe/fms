@@ -1,0 +1,16 @@
+server:
+  port: 8080
+   
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    secure-port-enabled: false
+    
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+zuul:
+  prefix: /api

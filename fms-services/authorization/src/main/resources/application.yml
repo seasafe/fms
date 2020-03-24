@@ -1,0 +1,72 @@
+server:
+  port: 8000
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+
+spring:
+  application:
+    name: authorization-service
+  jackson:
+    mapper:
+      DEFAULT_VIEW_INCLUSION: true 
+    serialization: 
+      WRITE_DATES_AS_TIMESTAMPS: false
+    deserialization:
+      FAIL_ON_IGNORED_PROPERTIES: false
+      FAIL_ON_UNKNOWN_PROPERTIES: false
+      ACCEPT_SINGLE_VALUE_AS_ARRAY: true
+  security:
+    user:
+      name: admin
+      password: admin
+
+  datasource:
+    # dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+    url: jdbc:mysql://localhost:3306/fms
+    username: root
+    password: root
+    
+  jpa:
+    #database-platform: org.hibernate.dialect.MySQL5Dialect
+    #database: MYSQL
+    openInView: false
+    show_sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.cache.use_second_level_cache: true
+      hibernate.cache.use_query_cache: false
+      hibernate.generate_statistics: true
+      hibernate.cache.region.factory_class: org.hibernate.cache.internal.NoCachingRegionFactory
+      hibernate.jdbc.lob.non_contextual_creation: true
+
+  data:
+    jpa:
+      repositories.enabled: true
+
+logging:
+  level:
+    org.springframework.web: ERROR
+    org.springframework.security: ERROR
+    com.fms: DEBUG
+  file: authorization.log
+  pattern:
+    console: "%d{dd-MMM-yyyy HH:mm:ss} %magenta([%thread]) %highlight(%-5level) %logger.%M - %msg%n"
+    
+ribbon:
+  eureka:
+    enabled: false
+
+zuul:
+  routes:
+    employee-service:
+      url: http://localhost:8001
+
+employee:
+  service:
+    name : employee-service

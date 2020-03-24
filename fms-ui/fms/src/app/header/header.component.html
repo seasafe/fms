@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-sm  bg-info p-0">
+    <div class="container-fluid" style="background-color: #1036A0;">
+        <div class="navbar-header">
+            <a class="navbar-brand" [routerLink]="['/home']"><b>
+                    <font size="5" color="white"><i class="far fa-handshake"></i> Outreach FMS</font>
+                </b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartext">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbartext">
+            <ul class="nav navbar-nav nav-fill ml-auto">
+                <li class="nav-item" *ngIf="isAdmin || isPMO">
+                    <a class="btn btn-outline-dark nav-link mr-1" [routerLink]="['/dashboard']">
+                        <mdb-icon fab icon="delicious"></mdb-icon>Dashboard
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="isAdmin || isPMO">
+                    <a class="btn btn-outline-dark nav-link mr-1" [routerLink]="['/events']">
+                        <mdb-icon fas icon="bell"></mdb-icon>Events
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="isAdmin || isPMO">
+                    <a class="btn btn-outline-dark nav-link mr-1" [routerLink]="['/reports']">
+                        <mdb-icon far icon="file-excel"></mdb-icon>Reports
+                    </a>
+                </li>
+                <li class="nav-item dropdown" *ngIf="isAdmin">
+                    <a class="btn btn-outline-dark nav-link dropdown-toggle mr-1" data-toggle="dropdown"
+                        id="congifurationdd" [routerLink]="['/admin']" role="button" aria-haspopup="true"
+                        aria-expanded="false">
+                        <mdb-icon far icon="sun"></mdb-icon>Configuration
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="congifurationdd" *ngIf="isAdmin">
+                        <a [routerLink]="['/assignPMO']" class="dropdown-item bg-info text-dark">AssignPMO</a>
+                        <a [routerLink]="['/feedback']" class="dropdown-item bg-info text-dark">Feedback</a>
+                    </div>
+                </li>
+            </ul>
+            <button class="btn btn-default btn-sm" type="button" (click)="logout()">
+                <span class="navbar-text" *ngIf="username">
+                    <mdb-icon fas icon="user-alt"></mdb-icon> {{username}} - Logout
+                </span>
+                <span class="navbar-text" *ngIf="!username">
+                    <mdb-icon fas icon="user-alt"></mdb-icon> Login
+                </span>
+            </button>
+        </div>
+    </div>
+
+</nav>
