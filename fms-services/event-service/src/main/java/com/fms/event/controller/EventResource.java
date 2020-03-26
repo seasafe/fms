@@ -12,12 +12,14 @@ import org.springframework.batch.core.repository.JobRestartException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.MediaType;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.annotation.JsonView;
@@ -27,13 +29,16 @@ import com.fms.event.jackson.View;
 import com.fms.event.model.Event;
 import com.fms.event.service.EventService;
 
+import ch.qos.logback.classic.Logger;
+
 
 /**
  * @author Kesavalu
  *
  */
 @RestController
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:4200")
+@RequestMapping("/events-api")
 public class EventResource {
 
 	@Autowired
@@ -55,7 +60,7 @@ public class EventResource {
 		return eventService.getEvent(eventRefId);
 	}	
 	@PreAuthorize("hasRole('ROLE_ADMIN')")
-	@PostMapping("/events")
+	@PostMapping("/events/search")
 	@JsonView(View.Summary.class)
 	public Page<Event> getEventBasedOnCriteria(@RequestBody EventSearchRequest eventSearchCriteria, Pageable pageable){
 		return eventService.getEventBasedOnCriteria(eventSearchCriteria,pageable);

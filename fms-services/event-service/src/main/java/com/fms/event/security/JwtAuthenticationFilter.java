@@ -33,7 +33,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 	protected void doFilterInternal(HttpServletRequest req, HttpServletResponse res, FilterChain chain)
 			throws IOException, ServletException {
 
-		req.getHeaderNames().asIterator().forEachRemaining(s -> System.out.println(s+" --  "+req.getHeader(s)));
 		String header = req.getHeader(HEADER_STRING)!=null?req.getHeader(HEADER_STRING):req.getHeader("authorization");
 		String headerEmployeeId = req.getHeader(HEADER_EMPLOYEE_STRING);
 		String username = null;
@@ -65,7 +64,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 				UsernamePasswordAuthenticationToken authentication = jwtTokenUtil.getAuthentication(authToken,
 						userDetails);
 				authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(req));
-				logger.info("authenticated user " + username + ", setting security context");
+				logger.info("authenticated user " + username + ","
+						+ " setting security context"
+						+authentication.getAuthorities().toString());
 				SecurityContextHolder.getContext().setAuthentication(authentication);
 			}
 		}

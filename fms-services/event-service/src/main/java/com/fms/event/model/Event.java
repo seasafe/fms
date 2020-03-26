@@ -53,7 +53,7 @@ public class Event extends Audit {
 	@JsonView(View.Summary.class)
 	private String eventRefId;
 	@Size(max = 100)
-	@NotNull
+	//@NotNull
 	@Column(name = "event_name")
 	@JsonView(View.Summary.class)
 	private String eventName;
@@ -64,27 +64,28 @@ public class Event extends Audit {
 	@Column(name = "event_date")
 	@JsonView(View.Summary.class)
 	private Date eventDate;
+	
 	@Column(name = "project")
-	@JsonView(View.SummaryWithDetail.class)
+	@JsonView(View.Summary.class)
 	private String project;
 	@Column(name = "base_location")
-	@JsonView(View.SummaryWithDetail.class)
+	@JsonView(View.Summary.class)
 	private String baseLocation;
 	@Column(name = "beneficiary")
-	@JsonView(View.SummaryWithDetail.class)
+	@JsonView(View.Summary.class)
 	private String beneficiary;
 	@Column(name = "council")
-	@JsonView(View.SummaryWithDetail.class)
+	@JsonView(View.Summary.class)
 	private String council;
 	@Column(name = "status")
-	@JsonView(View.SummaryWithDetail.class)
+	@JsonView(View.Summary.class)
 	private String status;
 	@Column(name = "category")
 	@JsonView(View.SummaryWithDetail.class)
 	private String category;
 	@Size(max = 500)
 	@Column(name = "venue_address")
-	@JsonView(View.SummaryWithDetail.class)
+	@JsonView(View.Summary.class)
 	private String venueAddress;
 	@Column(name = "IIEP_category")
 	@JsonView(View.SummaryWithDetail.class)

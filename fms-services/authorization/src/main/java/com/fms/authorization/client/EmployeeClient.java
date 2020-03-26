@@ -16,11 +16,14 @@ import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClient;
 import com.netflix.discovery.shared.Application;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * @author Kesavalu
  *
  */
 @Component
+@Slf4j
 public class EmployeeClient {
 	
 	
@@ -38,9 +41,11 @@ public class EmployeeClient {
 		  Application application = eurekaClient.getApplication(employeeServiceName);
 	        InstanceInfo instanceInfo = application.getInstances().get(0);
 	        try {
-	            ResponseEntity<Employee> response = this.template.getForEntity(instanceInfo.getSecurePort()==1?"https://":"http://" + instanceInfo.getIPAddr() + ":" + instanceInfo.getPort() + "/employees/{employeeName}", Employee.class, employeeName);
+	        	String employeeServiceUrl = instanceInfo.getPort()==443?"https://":"http://" + instanceInfo.getAppName()+":"+ instanceInfo.getPort()+"/employees-api/employees/{employeeName}";
+	            ResponseEntity<Employee> response = this.template.getForEntity(employeeServiceUrl, Employee.class, employeeName);
 	            return response.getBody();
 	        } catch (HttpClientErrorException e) {
+	        	log.error(e.getMessage());
 	            if (e.getStatusCode() == HttpStatus.NOT_FOUND) {
 	                return null;
 	            }
