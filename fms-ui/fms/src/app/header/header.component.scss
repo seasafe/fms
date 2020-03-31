@@ -19,3 +19,15 @@
   padding-bottom: 3px;
   }
   
+  ul.nav li.dropdown:hover > div.dropdown-menu {
+    display: block;
+    color: #FFFFFF;
+    background-color: #1036A0;
+  }
+
+  .dropdown-item:hover, .dropdown-item:focus {
+    
+    color: #FFFFFF !important;
+    background-color: rgb(74, 95, 153) !important;
+    font-weight: bold !important;
+  }

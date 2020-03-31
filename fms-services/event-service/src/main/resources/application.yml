@@ -29,9 +29,9 @@ spring:
       ACCEPT_SINGLE_VALUE_AS_ARRAY: true
   datasource:
    driver-class-name: com.mysql.cj.jdbc.Driver
-   url: jdbc:mysql://3.20.216.200:3306/fms
-   username: kesav
-   password: kesav
+   url: jdbc:mysql://localhost:3306/fms
+   username: root
+   password: root
     
   jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect
@@ -44,7 +44,7 @@ spring:
     properties:
       hibernate.cache.use_second_level_cache: false
       hibernate.cache.use_query_cache: false
-      hibernate.generate_statistics: true
+      hibernate.generate_statistics: false
       hibernate.cache.region.factory_class: org.hibernate.cache.internal.NoCachingRegionFactory
       hibernate.jdbc.lob.non_contextual_creation: true
       hibernate:
@@ -76,3 +76,8 @@ logging:
   file: event-service.log
   pattern:
     console: "%d{dd-MMM-yyyy HH:mm:ss} %magenta([%thread]) %highlight(%-5level) %logger.%M - %msg%n"
+ribbon:
+  ReadTimeout: 60000      
+employee:
+  service:
+    name : employee-service

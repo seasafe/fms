@@ -8,12 +8,17 @@ import { AdminComponent } from './admin/admin.component';
 import { EventComponent } from './event/event.component';
 import { Authguard } from './common/authguard';
 import { AuthService } from './common/auth.service';
+import { PmoComponent } from './pmo/pmo.component';
+import { QuestionsComponent } from './admin/questions/questions.component';
 
 
 const routes: Routes = [
   // {path: '', canActivate: [Authguard], children: [
   { path: 'login', component: LoginComponent },
   { path: 'admin', component: AdminComponent, canActivate: [Authguard] },
+  { path: 'question', component: QuestionsComponent, canActivate: [Authguard] },
+  { path: 'question/:questionId', component: QuestionsComponent, canActivate: [Authguard] },
+  { path: 'pmo', component: PmoComponent, canActivate: [Authguard] },
   { path: 'home', component: HomeComponent, canActivate: [Authguard] },
   { path: 'events', component: EventComponent, canActivate: [Authguard] },
   { path: 'dashboard', component: DashboardComponent, canActivate: [Authguard] },

@@ -3,6 +3,9 @@
  */
 package com.fms.employee.service;
 
+import java.util.Collection;
+import java.util.Set;
+
 import javax.transaction.Transactional;
 import javax.validation.constraints.NotNull;
 
@@ -15,7 +18,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.fms.employee.model.Employee;
+import com.fms.employee.model.Role;
 import com.fms.employee.repository.EmployeeRepository;
+import com.fms.employee.repository.RoleRepository;
 import com.fms.employee.util.Constants;
 
 /**
@@ -27,6 +32,9 @@ import com.fms.employee.util.Constants;
 public class EmployeeService {
 	@Autowired
 	private EmployeeRepository employeeRepo;
+	
+	@Autowired
+	private RoleRepository roleRepo;
 	
 	@Autowired 
 	private BCryptPasswordEncoder bcryptEncoder;
@@ -65,6 +73,32 @@ public class EmployeeService {
 	 */
 	public Page<Employee> getAllEmployees(Pageable pageable) {
 		return employeeRepo.findAll(pageable);
+	}
+
+
+
+	/**
+	 * @return
+	 */
+	public Page<Employee> getEmployeeByRole(String role,Pageable pageable) {
+		return employeeRepo.findByRoles_RoleNameAndIsActiveAndIsDeleted(role,Constants.ACTIVE,Constants.PRESENT,pageable).orElseThrow(() -> new ResourceNotFoundException("PMO Users not found"));
+	}
+
+
+
+	/**
+	 * @param email
+	 * @param role
+	 * @param isRemove
+	 */
+	public void assignRole(String email, String role, boolean isRemove) {
+		Employee employee = employeeRepo.findByEmailAndIsActiveAndIsDeleted(email, Constants.ACTIVE,Constants.PRESENT).orElseThrow(() -> new ResourceNotFoundException("Employee not found"));
+		Role roleObj = roleRepo.findByRoleName(role);
+		employee.getRoles().remove(roleObj);
+		if(!isRemove) {
+			employee.getRoles().add(roleObj);
+		}
+		employeeRepo.save(employee);
 	}
 	
 	

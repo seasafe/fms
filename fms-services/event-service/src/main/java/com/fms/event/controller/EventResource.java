@@ -3,6 +3,8 @@
  */
 package com.fms.event.controller;
 
+import java.util.List;
+
 import javax.validation.constraints.NotNull;
 
 import org.springframework.batch.core.JobParametersInvalidException;
@@ -12,9 +14,10 @@ import org.springframework.batch.core.repository.JobRestartException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.http.MediaType;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,11 +28,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fasterxml.jackson.annotation.JsonView;
 import com.fms.event.batch.EventSummaryBatchLauncher;
 import com.fms.event.bean.EventSearchRequest;
+import com.fms.event.dto.FeedbackDTO;
+import com.fms.event.dto.QuestionDTO;
 import com.fms.event.jackson.View;
 import com.fms.event.model.Event;
+import com.fms.event.model.FeedbackType;
 import com.fms.event.service.EventService;
-
-import ch.qos.logback.classic.Logger;
+import com.fms.event.service.FeedbackService;
+import com.fms.event.service.QuestionService;
 
 
 /**
@@ -47,6 +53,11 @@ public class EventResource {
 	@Autowired
 	EventSummaryBatchLauncher eventSummaryBatchLauncher;
 
+	@Autowired
+	QuestionService questionService;
+	
+	@Autowired
+	FeedbackService feedbackService;
 	
 	@PreAuthorize("hasRole('ROLE_ADMIN')")
 	@GetMapping("/events")
@@ -76,6 +87,41 @@ public class EventResource {
 			e.printStackTrace();
 		}
 		return "success";
+	}
+	
+	@GetMapping("/feedback/questions")
+	@PreAuthorize("hasRole('ROLE_ADMIN')")
+	public List<QuestionDTO> getQuestions(){
+		return questionService.getAllQuestion();
+	}
+	
+	@GetMapping("/feedback/questions/{questionId}")
+	@PreAuthorize("hasRole('ROLE_ADMIN')")
+	public QuestionDTO getQuestions(@PathVariable("questionId") Long questionId){
+		return questionService.getQuestion(questionId);
+	}
+	
+	@DeleteMapping("/feedback/questions/{questionId}")
+	@PreAuthorize("hasRole('ROLE_ADMIN')")
+	public void deleteQuestion(@PathVariable("questionId") Long questionId){
+		questionService.deleteQuestion(questionId);
+	}
+	
+	@PostMapping("/feedback/questions")
+	@PreAuthorize("hasRole('ROLE_ADMIN')")
+	public QuestionDTO addQuestion(@RequestBody QuestionDTO questionDTO){
+		return questionService.saveQuestion(questionDTO);
+	}
+	
+	@PostMapping("/feedback")
+	public Long saveFeedback(@RequestBody FeedbackDTO feedbackDTO,Authentication authentication){
+		return feedbackService.saveFeedback(feedbackDTO, authentication);
+	}
+	
+	@GetMapping("/feedback/type")
+	@PreAuthorize("hasRole('ROLE_ADMIN')")
+	public List<FeedbackType> getFeedbackType(){
+		return questionService.getAllFeedbackType();
 	}
 	
 }

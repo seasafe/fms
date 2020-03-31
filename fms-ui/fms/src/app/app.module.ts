@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -20,7 +20,12 @@ import { AdminComponent } from './admin/admin.component';
 import { Authguard } from './common/authguard';
 import { NotificationModule } from './common/notification/notification.module';
 import { NgxUiLoaderModule, NgxUiLoaderHttpModule, NgxUiLoaderConfig } from 'ngx-ui-loader';
-
+import { PmoComponent } from './pmo/pmo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+/* Angular material 8 */
+import { AngularMaterialModule } from './angular-material.module';
+import { TableModule } from 'primeng/table';
+import { QuestionsComponent } from './admin/questions/questions.component';
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   bgsColor: '#1036A0',
@@ -63,12 +68,15 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     DashboardComponent,
     ReportsComponent,
     EventComponent,
-    AdminComponent
+    AdminComponent,
+    PmoComponent,
+    QuestionsComponent
   ],
-
   imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule,
     ReactiveFormsModule, MDBBootstrapModule.forRoot(), NotificationModule, HttpClientModule,
-    NgxUiLoaderModule.forRoot(ngxUiLoaderConfig), NgxUiLoaderHttpModule.forRoot({ showForeground: true })],
+    NgxUiLoaderModule.forRoot(ngxUiLoaderConfig), NgxUiLoaderHttpModule.forRoot({ showForeground: true }), BrowserAnimationsModule,
+    // AngularMaterialModule,
+    TableModule],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true, deps: [AuthService, Router] },
   { provide: Authguard }],
   bootstrap: [AppComponent]

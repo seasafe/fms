@@ -25,15 +25,25 @@
                         <mdb-icon far icon="file-excel"></mdb-icon>Reports
                     </a>
                 </li>
-                <li class="nav-item dropdown" *ngIf="isAdmin">
-                    <a class="btn btn-outline-dark nav-link dropdown-toggle mr-1" data-toggle="dropdown"
-                        id="congifurationdd" [routerLink]="['/admin']" role="button" aria-haspopup="true"
-                        aria-expanded="false">
+                <!-- <li class="nav-item dropdown" *ngIf="isAdmin" ngbDropdown>
+                    <a class="btn btn-outline-dark nav-link dropdown-toggle mr-1" data-toggle="dropdown" id="id01"
+                        role="button" ngbDropdownToggle>
                         <mdb-icon far icon="sun"></mdb-icon>Configuration
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="congifurationdd" *ngIf="isAdmin">
-                        <a [routerLink]="['/assignPMO']" class="dropdown-item bg-info text-dark">AssignPMO</a>
-                        <a [routerLink]="['/feedback']" class="dropdown-item bg-info text-dark">Feedback</a>
+                    <div class="dropdown-menu" aria-labelledby="id01">
+                        <a [routerLink]="['/assignPMO']" class="dropdown-item">AssignPMO</a>
+                        <a [routerLink]="['/feedback']" class="dropdown-item">Feedback</a>
+                    </div>
+                </li> -->
+
+                <li class="nav-item dropdown" *ngIf="isAdmin" ngbDropdown>
+                    <a class="btn btn-outline-dark nav-link dropdown-toggle" id="id01" ngbDropdownToggle>
+                        <mdb-icon far icon="sun"></mdb-icon>Configuration
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+                        <a [routerLink]="['/pmo']" class="dropdown-item">AssignPMO</a>
+                        <div class="dropdown-divider"></div>
+                        <a [routerLink]="['/admin']" class="dropdown-item">Feedback</a>
                     </div>
                 </li>
             </ul>

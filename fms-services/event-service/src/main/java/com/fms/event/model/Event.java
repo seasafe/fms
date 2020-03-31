@@ -40,6 +40,10 @@ import lombok.ToString;
 @AllArgsConstructor
 public class Event extends Audit {
 
+	public Event(String eventRefId) {
+		super();
+		this.eventRefId=eventRefId;
+	}
 	/**
 	 * 
 	 */

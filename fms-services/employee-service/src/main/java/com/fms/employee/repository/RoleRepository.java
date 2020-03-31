@@ -15,4 +15,10 @@ import com.fms.employee.model.Role;
 @Repository
 public interface RoleRepository extends JpaRepository<Role, Long>{
 
+	/**
+	 * @param role
+	 * @return
+	 */
+	Role findByRoleName(String role);
+
 }

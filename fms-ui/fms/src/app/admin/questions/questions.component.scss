@@ -1,0 +1,6 @@
+.invalid-feedback{
+    font-weight: bolder;
+}
+.invalid-feedback > input[type=text] , .invalid-feedback > textarea,.invalid-feedback > input[type=radio],.invalid-feedback > input[type=checkbox]{
+    border-color: rgb(250, 25, 25) !important;
+}

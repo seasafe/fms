@@ -18,6 +18,14 @@ export class BasehttpService {
   get(url: string, object?: any): Observable<any> {
     return this.http.get(url, { params: object }).pipe(retry(3), catchError(this.handleError), map((response: Response) => response));
   }
+  put(url: string, object?: any): Observable<any> {
+    return this.http.put(url, object).pipe(retry(3), catchError(this.handleError), map((response: Response) => response));
+  }
+  delete(url: string, object?: any): Observable<any> {
+    return this.http.delete(url, object).pipe(retry(3), catchError(this.handleError));
+  }
+
+
 
   upload(url: string, formData: any): Observable<any> {
     const req = new HttpRequest('POST', url, formData, {

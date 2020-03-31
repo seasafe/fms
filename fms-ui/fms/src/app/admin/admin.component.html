@@ -4,7 +4,90 @@
 
 <main>
     <div class="container-fluid">
-        <p>Admin page works!</p>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card border-primary">
+
+                    <div class="card-header" style="background-color: #1036A0;color: white;">
+                        <span>Feedback Questions</span>
+                        <span class="pull-right float-right"><i class="fa fa-times"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <p style="text-align: right;">
+                            <a class="btn btn-success" routerLink="/question" routerLinkActive="active">ADD QUESTION
+                            </a>
+                            <button class="btn btn-danger ml-2" (click)="clearFilters()">CLEAR FILTERS</button>
+                        </p>
+                        <p-table #dt [columns]="cols" [value]="questionList" [paginator]="true" [rows]="5"
+                            [loading]="loading">
+                            <ng-template pTemplate="caption">
+                                <div style="text-align: right">
+                                    <i class="pi pi-search" style="margin:4px 4px 0 0"></i>
+                                    <input type="text" pInputText size="50" placeholder="Global Filter"
+                                        (input)="dt.filterGlobal($event.target.value, 'contains')"
+                                        [value]="dt.filters['global'] ? dt.filters['global'].value : ''"
+                                        style="width:auto">
+                                </div>
+                            </ng-template>
+                            <ng-template pTemplate="header" let-columns>
+                                <tr>
+                                    <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+                                        {{col.header}}
+                                        <p-sortIcon [field]="col.field" ariaLabel="Activate to sort"
+                                            ariaLabelDesc="Activate to sort in descending order"
+                                            ariaLabelAsc="Activate to sort in ascending order"></p-sortIcon>
+                                    </th>
+                                    <th>Actions</th>
+                                </tr>
+                                <tr>
+                                    <th *ngFor="let col of columns">
+                                        <input pInputText type="text"
+                                            (input)="dt.filter($event.target.value, col.field, 'contains')"
+                                            [value]="dt.filters[col.field] ? dt.filters[col.field].value : ''"
+                                            style="width:auto">
+                                        <!--  <input *ngSwitchCase="'totalAnswers'" pInputText type="text"
+                                            (input)="dt.filter($event.target.value, col.field, 'contains')"
+                                            [value]="dt.filters[col.field] ? dt.filters[col.field].value : ''"
+                                            style="width:auto">
+                                        <input *ngSwitchCase="'type'" pInputText type="text"
+                                            (input)="dt.filter($event.target.value, col.field, 'contains')"
+                                            [value]="dt.filters[col.field] ? dt.filters[col.field].value : ''" 
+                                            style="width:auto"> -->
+                                    </th>
+                                    <th></th>
+
+                                </tr>
+                            </ng-template>
+                            <ng-template pTemplate="body" let-rowData let-columns="columns">
+                                <tr>
+                                    <td *ngFor="let col of columns">
+                                        {{rowData[col.field]}}
+                                    </td>
+                                    <td><button class="btn btn-primary" (click)="editQuestion(rowData)">
+                                            <mdb-icon far icon="sun"></mdb-icon>Edit
+                                        </button></td>
+                                </tr>
+                            </ng-template>
+                            <ng-template pTemplate="emptymessage" let-columns>
+                                <tr>
+                                    <td [attr.colspan]="columns.length">
+                                        No records found
+                                    </td>
+                                </tr>
+                            </ng-template>
+                        </p-table>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
     </div>
 </main>
 

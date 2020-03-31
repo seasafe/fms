@@ -6,6 +6,12 @@ export class Constants {
     static EVENTS_BASE_API_URL = 'events-api/';
     static LOGIN_URL = Constants.DOMAIN_URL + 'api/login';
     static GET_EVENTS_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'events';
+    static ASSIGN_PMO_URL = Constants.DOMAIN_URL + Constants.EMPLOYEE_BASE_API_URL + 'assignRole';
+    static GET_PMO_URL = Constants.DOMAIN_URL + Constants.EMPLOYEE_BASE_API_URL + 'pmos';
+    static GET_FB_QUESTION_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback/questions';
+    static GET_FB_TYPE_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback/type';
+    static SAVE_QUESTION_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback/questions';
+    static DELETE_QUESTION_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback/questions';
     static NOTIFICATION_OPTIONS = {
         autoClose: true,
         keepAfterRouteChange: false
@@ -22,6 +28,7 @@ export class Constants {
         autoClose: true,
         keepAfterRouteChange: true
     };
+
 
 
 }
