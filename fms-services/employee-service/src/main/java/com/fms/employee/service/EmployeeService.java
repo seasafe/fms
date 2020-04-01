@@ -4,6 +4,7 @@
 package com.fms.employee.service;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.Set;
 
 import javax.transaction.Transactional;
@@ -16,6 +17,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import com.fms.employee.model.Employee;
 import com.fms.employee.model.Role;
@@ -99,6 +101,17 @@ public class EmployeeService {
 			employee.getRoles().add(roleObj);
 		}
 		employeeRepo.save(employee);
+	}
+
+
+
+	/**
+	 * @param employeeIds
+	 * @return
+	 */
+	public Employee[] getEmployeeList(List<Long> employeeIds) {
+		List<Employee> employees = employeeRepo.findAllByEmployeeIdAndIsActiveAndIsDeleted(employeeIds, Constants.ACTIVE,Constants.PRESENT).orElseThrow(() -> new ResourceNotFoundException("Employee not found"));
+		return CollectionUtils.isEmpty(employees)?null:employees.toArray(new Employee[employees.size()]);
 	}
 	
 	

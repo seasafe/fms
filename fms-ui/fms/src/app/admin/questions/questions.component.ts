@@ -87,7 +87,7 @@ export class QuestionsComponent implements OnInit {
   mapFormValues(): void {
     this.question.multiAnsAllowed = this.questionForm.get('multiAnsAllowed').value;
     this.question.type = this.questionForm.get('type').value;
-    this.question.multiAnsAllowed = this.questionForm.get('multiAnsAllowed').value;
+    this.question.customQuestion = this.questionForm.get('customQuestion').value;
     this.question.freeText = this.questionForm.get('freeText').value;
     this.question.question = this.questionForm.get('question').value;
     this.answers = this.questionForm.get('answers') as FormArray;

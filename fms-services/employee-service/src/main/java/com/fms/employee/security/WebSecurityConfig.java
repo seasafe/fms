@@ -43,7 +43,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.cors().and().csrf().disable().authorizeRequests().antMatchers("/events/job/launch").permitAll()
-		.antMatchers("/employees-api/employees/**","employees/**","/api/login").permitAll().anyRequest()
+		.antMatchers("/employees-api/employees/**","/employees-api/employeeslist/**","employees/**","employeeslist/**","/api/login").permitAll().anyRequest()
 				.authenticated().and().exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
 				.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 //		http.addFilterBefore(new CORSFilter(), ChannelProcessingFilter.class);

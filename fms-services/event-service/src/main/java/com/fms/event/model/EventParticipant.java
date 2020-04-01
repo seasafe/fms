@@ -55,5 +55,7 @@ public class EventParticipant extends Audit {
 	@JoinColumn(name = "eventId")
 	@JsonIgnore
 	private Event event;
+	@Column(name="status")
+	private String status;
 
 }

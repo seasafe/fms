@@ -59,10 +59,11 @@ public class QuestionService {
 
 	public QuestionDTO saveQuestion(QuestionDTO questionDTO) {
 		Question question = MyBeanUtil.copyProperties(questionDTO, Question.class);
-		if (questionDTO.getType() != null)
+		if (questionDTO.getType() != null) {
 			question.setFeedbackType(feedbackTypeRepo.findByType(questionDTO.getType()));
-		if (questionDTO.getFeedbackTypeId() != null)
+		}else if (questionDTO.getFeedbackTypeId() != null) {
 			question.setFeedbackType(feedbackTypeRepo.findById(questionDTO.getFeedbackTypeId()).get());
+		}
 		question.getAnswers().forEach(a -> a.setQuestion(question));
 		Question persistedQuestion = questionRepo.save(question);
 		return MyBeanUtil.copyProperties(persistedQuestion, QuestionDTO.class);

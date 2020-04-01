@@ -26,6 +26,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material.module';
 import { TableModule } from 'primeng/table';
 import { QuestionsComponent } from './admin/questions/questions.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { FeedbacksuccessComponent } from './feedback/feedbacksuccess.component';
+import { FeedbackalreadytakenComponent } from './feedback/feedbackalreadytaken.component';
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   bgsColor: '#1036A0',
@@ -70,7 +73,10 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     EventComponent,
     AdminComponent,
     PmoComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    FeedbackComponent,
+    FeedbacksuccessComponent,
+    FeedbackalreadytakenComponent
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule,
     ReactiveFormsModule, MDBBootstrapModule.forRoot(), NotificationModule, HttpClientModule,

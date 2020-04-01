@@ -3,8 +3,10 @@
  */
 package com.fms.event.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import org.assertj.core.util.Arrays;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -99,8 +101,13 @@ class FeedbackServiceTest extends EventServiceApplicationTests{
 	@Test
 	@Order(1)
 	void testSaveFeedback() {
-		FeedbackDTO dto = new FeedbackDTO("Poor", "EVNT00047261", 2l);
-		Long feedbackId = feedbackService.saveFeedback(dto, SecurityContextHolder.getContext().getAuthentication());
+		FeedbackDTO dto = new FeedbackDTO();
+		dto.setEventRefId("EVNT00047261");
+		dto.setAnswer("Poor");
+		dto.setQuestionId(2l);
+		List<FeedbackDTO> dtos= new ArrayList<>();
+		dtos.add(dto);
+		List<Long> feedbackId = feedbackService.saveFeedback(dtos, SecurityContextHolder.getContext().getAuthentication());
 		Assert.notNull(feedbackId);
 	}
 

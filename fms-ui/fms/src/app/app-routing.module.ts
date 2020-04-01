@@ -10,6 +10,9 @@ import { Authguard } from './common/authguard';
 import { AuthService } from './common/auth.service';
 import { PmoComponent } from './pmo/pmo.component';
 import { QuestionsComponent } from './admin/questions/questions.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { FeedbacksuccessComponent } from './feedback/feedbacksuccess.component';
+import { FeedbackalreadytakenComponent } from './feedback/feedbackalreadytaken.component';
 
 
 const routes: Routes = [
@@ -23,7 +26,11 @@ const routes: Routes = [
   { path: 'events', component: EventComponent, canActivate: [Authguard] },
   { path: 'dashboard', component: DashboardComponent, canActivate: [Authguard] },
   { path: 'reports', component: ReportsComponent, canActivate: [Authguard] },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
+  { path: 'feedback', component: FeedbackComponent, canActivate: [Authguard] },
+  { path: 'feedback-success', component: FeedbacksuccessComponent, canActivate: [Authguard] },
+  { path: 'feedback-taken', component: FeedbackalreadytakenComponent, canActivate: [Authguard] },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/home', pathMatch: 'full' }
   // ]}
 ];
 

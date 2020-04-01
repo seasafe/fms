@@ -1,64 +1,1472 @@
-2020-04-01 00:03:33.582  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 00:08:33.586  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 00:13:33.588  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 00:18:33.590  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 00:23:33.592  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 00:28:33.594  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 00:33:32.636  INFO 17252 --- [http-nio-8001-exec-10] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
-2020-04-01 00:33:32.648  INFO 17252 --- [http-nio-8001-exec-10] i.StatisticalLoggingSessionEventListener : Session Metrics {
-    1346900 nanoseconds spent acquiring 1 JDBC connections;
+2020-04-02 00:00:12.030  INFO 16880 --- [http-nio-8001-exec-1] c.f.e.security.JwtAuthenticationFilter   : authenticated user Kesav, setting security context
+2020-04-02 00:00:12.049  INFO 16880 --- [http-nio-8001-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    343900 nanoseconds spent acquiring 1 JDBC connections;
     0 nanoseconds spent releasing 0 JDBC connections;
-    210600 nanoseconds spent preparing 2 JDBC statements;
-    1456500 nanoseconds spent executing 2 JDBC statements;
+    341700 nanoseconds spent preparing 3 JDBC statements;
+    2751700 nanoseconds spent executing 3 JDBC statements;
     0 nanoseconds spent executing 0 JDBC batches;
     0 nanoseconds spent performing 0 L2C puts;
     0 nanoseconds spent performing 0 L2C hits;
     0 nanoseconds spent performing 0 L2C misses;
-    215000 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
-    11100 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+    220300 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    309700 nanoseconds spent executing 2 partial-flushes (flushing a total of 3 entities and 3 collections)
 }
-2020-04-01 00:33:33.597  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 00:38:33.598  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 00:43:33.600  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 00:48:33.601  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 00:53:33.602  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 00:58:33.605  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 01:03:33.609  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 01:08:33.613  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 01:13:33.615  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 01:18:33.617  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 01:23:33.619  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 01:28:33.621  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 01:33:33.623  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 01:38:33.625  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 01:43:33.627  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 01:48:33.628  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 01:53:33.630  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 01:58:33.632  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 02:03:33.633  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 02:08:33.635  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 02:13:33.638  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 02:18:33.638  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 02:23:33.641  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 02:28:33.642  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 02:33:33.646  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 02:38:33.647  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 02:43:33.648  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 02:48:33.650  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 02:53:33.651  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 02:58:33.653  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 03:03:33.656  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 03:08:33.657  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 03:13:33.659  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 03:18:33.663  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 03:23:33.664  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 03:28:33.665  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 03:33:33.668  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 03:38:33.671  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 03:43:33.673  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 03:48:33.676  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 03:53:33.677  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 03:58:33.681  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 04:03:33.683  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 04:08:33.686  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-01 04:13:33.689  INFO 17252 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 00:00:12.067  INFO 16880 --- [http-nio-8001-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    24100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    824200 nanoseconds spent preparing 9 JDBC statements;
+    8099200 nanoseconds spent executing 9 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    339100 nanoseconds spent executing 1 flushes (flushing a total of 10 entities and 8 collections);
+    4600 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:00:15.846  INFO 16880 --- [http-nio-8001-exec-2] c.f.e.security.JwtAuthenticationFilter   : authenticated user Kesav, setting security context
+2020-04-02 00:00:15.927  INFO 16880 --- [http-nio-8001-exec-2] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    605000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    440500 nanoseconds spent preparing 4 JDBC statements;
+    69729300 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    66892800 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    239800 nanoseconds spent executing 2 partial-flushes (flushing a total of 3 entities and 3 collections)
+}
+2020-04-02 00:00:15.945  INFO 16880 --- [http-nio-8001-exec-2] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    28500 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    713900 nanoseconds spent preparing 8 JDBC statements;
+    8482300 nanoseconds spent executing 8 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    513800 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 7 collections);
+    9200 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:00:56.045  INFO 16880 --- [http-nio-8001-exec-3] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:00:56.062  INFO 16880 --- [http-nio-8001-exec-3] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    808900 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    312700 nanoseconds spent preparing 2 JDBC statements;
+    4318300 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    605500 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    10300 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:01:10.128  INFO 16880 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 00:01:49.574  INFO 16880 --- [RMI TCP Connection(223)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-02 00:01:49.576  INFO 16880 --- [RMI TCP Connection(223)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EMPLOYEE-SERVICE with eureka with status DOWN
+2020-04-02 00:01:49.577  WARN 16880 --- [RMI TCP Connection(223)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1585765909577, current=DOWN, previous=UP]
+2020-04-02 00:01:49.577  INFO 16880 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/localhost:employee-service:8001: registering service...
+2020-04-02 00:01:49.585  INFO 16880 --- [RMI TCP Connection(223)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-02 00:01:49.586  INFO 16880 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/localhost:employee-service:8001 - registration status: 204
+2020-04-02 00:01:49.588  INFO 16880 --- [RMI TCP Connection(223)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-02 00:01:49.591  INFO 16880 --- [RMI TCP Connection(223)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-04-02 00:01:52.594  INFO 16880 --- [RMI TCP Connection(223)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-04-02 00:01:52.598  INFO 16880 --- [RMI TCP Connection(223)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/localhost:employee-service:8001 - deregister  status: 200
+2020-04-02 00:01:52.607  INFO 16880 --- [RMI TCP Connection(223)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-04-02 00:01:52.607  INFO 16880 --- [RMI TCP Connection(223)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2020-04-02 00:01:52.624  INFO 16880 --- [RMI TCP Connection(223)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2020-04-02 00:01:52.957  INFO 16880 --- [RMI TCP Connection(223)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-02 00:01:52.960  INFO 16880 --- [RMI TCP Connection(223)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-02 00:01:52.964  WARN 16880 --- [RMI TCP Connection(223)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [logback-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@13.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@13.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@13.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+2020-04-02 00:01:52.964  WARN 16880 --- [RMI TCP Connection(223)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [logback-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@13.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@13.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@13.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@13.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@13.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@13.0.2/java.lang.Thread.run(Thread.java:830)
+2020-04-02 00:02:06.263  INFO 27684 --- [restartedMain] c.f.employee.EmployeeServiceApplication  : No active profile set, falling back to default profiles: default
+2020-04-02 00:02:07.191  INFO 27684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-02 00:02:07.280  INFO 27684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82ms. Found 2 JPA repository interfaces.
+2020-04-02 00:02:07.633  INFO 27684 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8aa05186-49bf-3ade-a44a-9493be4c5459
+2020-04-02 00:02:07.826  INFO 27684 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 00:02:07.830  INFO 27684 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 00:02:07.832  INFO 27684 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@29097298' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 00:02:07.834  INFO 27684 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 00:02:07.839  INFO 27684 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-02 00:02:08.505  INFO 27684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2020-04-02 00:02:08.515  INFO 27684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-02 00:02:08.515  INFO 27684 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-02 00:02:08.662  INFO 27684 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-02 00:02:09.535  INFO 27684 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-02 00:02:09.638  INFO 27684 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-02 00:02:09.810  INFO 27684 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-02 00:02:09.996  INFO 27684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-02 00:02:10.357  INFO 27684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-02 00:02:10.371  INFO 27684 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-02 00:02:11.065  INFO 27684 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-02 00:02:11.082  INFO 27684 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-02 00:02:11.242  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.243  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.307  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.367  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.369  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.407  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.407  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.410  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.410  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.413  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.415  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.417  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.418  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.425  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.494  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.514  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.515  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.533  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:11.534  INFO 27684 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:02:12.197 DEBUG 27684 --- [restartedMain] c.f.e.s.FilterChainExceptionHandler      : Filter 'filterChainExceptionHandler' configured for use
+2020-04-02 00:02:12.197 DEBUG 27684 --- [restartedMain] c.f.e.security.JwtAuthenticationFilter   : Filter 'authenticationTokenFilterBean' configured for use
+2020-04-02 00:02:13.188  WARN 27684 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-02 00:02:13.189  INFO 27684 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 00:02:13.197  WARN 27684 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-02 00:02:13.198  INFO 27684 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 00:02:13.359  INFO 27684 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 00:02:13.973  INFO 27684 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-02 00:02:16.000  INFO 27684 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-02 00:02:17.953  INFO 27684 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-02 00:02:19.885  INFO 27684 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-02 00:02:19.937  WARN 27684 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-02 00:02:20.113  INFO 27684 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-04-02 00:02:20.152  INFO 27684 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-04-02 00:02:20.221  INFO 27684 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-02 00:02:20.221  INFO 27684 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-02 00:02:20.388  INFO 27684 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-02 00:02:20.389  INFO 27684 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-02 00:02:20.582  INFO 27684 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 00:02:20.960  INFO 27684 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-04-02 00:02:20.961  INFO 27684 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-04-02 00:02:20.961  INFO 27684 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-04-02 00:02:20.961  INFO 27684 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-04-02 00:02:20.961  INFO 27684 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-04-02 00:02:20.961  INFO 27684 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-04-02 00:02:20.961  INFO 27684 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-04-02 00:02:21.107  INFO 27684 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-04-02 00:02:21.110  INFO 27684 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-04-02 00:02:21.112  INFO 27684 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-02 00:02:21.116  INFO 27684 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1585765941115 with initial instances count: 1
+2020-04-02 00:02:21.124  INFO 27684 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMPLOYEE-SERVICE with eureka with status UP
+2020-04-02 00:02:21.124  INFO 27684 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1585765941124, current=UP, previous=STARTING]
+2020-04-02 00:02:21.126  INFO 27684 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/localhost:employee-service:8001: registering service...
+2020-04-02 00:02:21.160  INFO 27684 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/localhost:employee-service:8001 - registration status: 204
+2020-04-02 00:02:21.604  INFO 27684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path ''
+2020-04-02 00:02:21.605  INFO 27684 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8001
+2020-04-02 00:02:23.209  INFO 27684 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-02 00:02:23.211  INFO 27684 --- [restartedMain] c.f.employee.EmployeeServiceApplication  : Started EmployeeServiceApplication in 21.121 seconds (JVM running for 22.523)
+2020-04-02 00:05:43.811  INFO 27684 --- [http-nio-8001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 00:05:43.932  INFO 27684 --- [http-nio-8001-exec-1] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:05:44.195  INFO 27684 --- [http-nio-8001-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    1134400 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    20398700 nanoseconds spent preparing 2 JDBC statements;
+    5067200 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    20931200 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    81300 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:05:57.727  INFO 27684 --- [http-nio-8001-exec-2] c.f.e.security.JwtAuthenticationFilter   : authenticated user Kesav, setting security context
+2020-04-02 00:05:57.791  INFO 27684 --- [http-nio-8001-exec-2] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    501900 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1988600 nanoseconds spent preparing 8 JDBC statements;
+    14054500 nanoseconds spent executing 8 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    933300 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 7 collections);
+    6400 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:06:24.223  INFO 27684 --- [http-nio-8001-exec-3] c.f.e.security.JwtAuthenticationFilter   : authenticated user Kesav, setting security context
+2020-04-02 00:06:24.308  INFO 27684 --- [http-nio-8001-exec-3] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    792100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    2270600 nanoseconds spent preparing 4 JDBC statements;
+    6120700 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    17112200 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    330100 nanoseconds spent executing 2 partial-flushes (flushing a total of 2 entities and 2 collections)
+}
+2020-04-02 00:06:24.339  INFO 27684 --- [http-nio-8001-exec-3] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    60700 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1825200 nanoseconds spent preparing 9 JDBC statements;
+    11426500 nanoseconds spent executing 9 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1133300 nanoseconds spent executing 1 flushes (flushing a total of 10 entities and 8 collections);
+    4400 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:06:35.093  INFO 27684 --- [http-nio-8001-exec-4] c.f.e.security.JwtAuthenticationFilter   : authenticated user Kesav, setting security context
+2020-04-02 00:06:35.183  INFO 27684 --- [http-nio-8001-exec-4] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    915400 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    865200 nanoseconds spent preparing 4 JDBC statements;
+    72127500 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    69679900 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    356200 nanoseconds spent executing 2 partial-flushes (flushing a total of 3 entities and 3 collections)
+}
+2020-04-02 00:06:35.217  INFO 27684 --- [http-nio-8001-exec-4] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    71300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1957800 nanoseconds spent preparing 8 JDBC statements;
+    12737400 nanoseconds spent executing 8 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1258800 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 7 collections);
+    9000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:06:41.756  INFO 27684 --- [http-nio-8001-exec-5] c.f.e.security.JwtAuthenticationFilter   : authenticated user Kesav, setting security context
+2020-04-02 00:06:41.833  INFO 27684 --- [http-nio-8001-exec-5] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    436300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    781500 nanoseconds spent preparing 4 JDBC statements;
+    64721300 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    62887300 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    282400 nanoseconds spent executing 2 partial-flushes (flushing a total of 2 entities and 2 collections)
+}
+2020-04-02 00:06:41.856  INFO 27684 --- [http-nio-8001-exec-5] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    28400 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1507700 nanoseconds spent preparing 9 JDBC statements;
+    8770700 nanoseconds spent executing 9 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    843500 nanoseconds spent executing 1 flushes (flushing a total of 10 entities and 8 collections);
+    6300 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:07:20.964  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 00:09:27.763  INFO 27684 --- [http-nio-8001-exec-7] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:09:27.774  INFO 27684 --- [http-nio-8001-exec-7] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    639300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    398700 nanoseconds spent preparing 2 JDBC statements;
+    2616500 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    207700 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    9300 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:09:47.965  INFO 27684 --- [http-nio-8001-exec-8] c.f.e.security.JwtAuthenticationFilter   : authenticated user Kesav, setting security context
+2020-04-02 00:09:48.021  INFO 27684 --- [http-nio-8001-exec-8] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    1182600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    3282000 nanoseconds spent preparing 9 JDBC statements;
+    19372100 nanoseconds spent executing 9 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1321400 nanoseconds spent executing 1 flushes (flushing a total of 10 entities and 8 collections);
+    9700 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:10:11.814  INFO 27684 --- [http-nio-8001-exec-9] c.f.e.security.JwtAuthenticationFilter   : authenticated user Kesav, setting security context
+2020-04-02 00:10:11.877  INFO 27684 --- [http-nio-8001-exec-9] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    655600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    797100 nanoseconds spent preparing 4 JDBC statements;
+    46859600 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    44358200 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    273600 nanoseconds spent executing 2 partial-flushes (flushing a total of 3 entities and 3 collections)
+}
+2020-04-02 00:10:11.910  INFO 27684 --- [http-nio-8001-exec-9] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    77100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1987600 nanoseconds spent preparing 8 JDBC statements;
+    13484100 nanoseconds spent executing 8 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    774000 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 7 collections);
+    8300 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:10:20.595  INFO 27684 --- [http-nio-8001-exec-10] c.f.e.security.JwtAuthenticationFilter   : authenticated user Kesav, setting security context
+2020-04-02 00:10:20.695  INFO 27684 --- [http-nio-8001-exec-10] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    1403100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    2036900 nanoseconds spent preparing 4 JDBC statements;
+    76765100 nanoseconds spent executing 4 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    71221700 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    614000 nanoseconds spent executing 2 partial-flushes (flushing a total of 2 entities and 2 collections)
+}
+2020-04-02 00:10:20.736  INFO 27684 --- [http-nio-8001-exec-10] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    67200 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    3850000 nanoseconds spent preparing 9 JDBC statements;
+    15627700 nanoseconds spent executing 9 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1592500 nanoseconds spent executing 1 flushes (flushing a total of 10 entities and 8 collections);
+    9600 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:12:20.968  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 00:13:51.207  INFO 27684 --- [http-nio-8001-exec-2] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:13:51.244  INFO 27684 --- [http-nio-8001-exec-2] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    788100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    762300 nanoseconds spent preparing 2 JDBC statements;
+    3204900 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    385700 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    10700 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:14:45.174  INFO 27684 --- [http-nio-8001-exec-3] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:14:45.183  INFO 27684 --- [http-nio-8001-exec-3] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    460600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    341000 nanoseconds spent preparing 2 JDBC statements;
+    2017500 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    287200 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    6700 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:14:45.466  INFO 27684 --- [http-nio-8001-exec-4] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:14:45.476  INFO 27684 --- [http-nio-8001-exec-4] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    61600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    366000 nanoseconds spent preparing 2 JDBC statements;
+    2316700 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    265400 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5800 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:15:10.940  INFO 27684 --- [http-nio-8001-exec-5] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:15:10.953  INFO 27684 --- [http-nio-8001-exec-5] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    686400 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    462600 nanoseconds spent preparing 2 JDBC statements;
+    2984200 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    293800 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    6700 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:15:28.630  INFO 27684 --- [http-nio-8001-exec-6] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:15:28.640  INFO 27684 --- [http-nio-8001-exec-6] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    640300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    372000 nanoseconds spent preparing 2 JDBC statements;
+    2039500 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    228100 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5600 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:15:29.070  INFO 27684 --- [http-nio-8001-exec-7] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:15:29.084  INFO 27684 --- [http-nio-8001-exec-7] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    65300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    662400 nanoseconds spent preparing 2 JDBC statements;
+    3965100 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    413000 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    7100 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:17:20.971  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 00:17:30.879  INFO 27684 --- [http-nio-8001-exec-8] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:17:30.889  INFO 27684 --- [http-nio-8001-exec-8] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    563800 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    399500 nanoseconds spent preparing 2 JDBC statements;
+    2277300 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    311100 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5500 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:17:31.087  INFO 27684 --- [http-nio-8001-exec-9] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:17:31.098  INFO 27684 --- [http-nio-8001-exec-9] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    42100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    462800 nanoseconds spent preparing 2 JDBC statements;
+    2669500 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    495600 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5800 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:17:49.545  INFO 27684 --- [http-nio-8001-exec-10] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:17:49.553  INFO 27684 --- [http-nio-8001-exec-10] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    675900 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    263500 nanoseconds spent preparing 2 JDBC statements;
+    1492100 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    275500 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    4200 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:22:20.973  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 00:27:20.986  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 00:28:32.231  INFO 27684 --- [http-nio-8001-exec-1] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:28:32.241  INFO 27684 --- [http-nio-8001-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    582700 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    255800 nanoseconds spent preparing 2 JDBC statements;
+    1651800 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    353000 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5500 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:28:32.378  INFO 27684 --- [http-nio-8001-exec-2] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:28:32.385  INFO 27684 --- [http-nio-8001-exec-2] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    36900 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    196000 nanoseconds spent preparing 2 JDBC statements;
+    2010100 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    159600 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:30:08.496  INFO 27684 --- [http-nio-8001-exec-3] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:30:08.504  INFO 27684 --- [http-nio-8001-exec-3] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    377900 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    193800 nanoseconds spent preparing 2 JDBC statements;
+    1718600 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    243900 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5800 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:30:41.192  INFO 27684 --- [http-nio-8001-exec-4] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:30:41.202  INFO 27684 --- [http-nio-8001-exec-4] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    556900 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    204100 nanoseconds spent preparing 2 JDBC statements;
+    2870800 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    533100 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5400 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:31:55.160  INFO 27684 --- [http-nio-8001-exec-6] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:31:55.169  INFO 27684 --- [http-nio-8001-exec-6] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    477300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    274400 nanoseconds spent preparing 2 JDBC statements;
+    2194100 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    248600 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    8200 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:31:55.420  INFO 27684 --- [http-nio-8001-exec-7] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:31:55.436  INFO 27684 --- [http-nio-8001-exec-7] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    69700 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    431400 nanoseconds spent preparing 2 JDBC statements;
+    4307000 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    317800 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    7000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:32:14.124  INFO 27684 --- [http-nio-8001-exec-8] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:32:14.145  INFO 27684 --- [http-nio-8001-exec-8] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    5483600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    407300 nanoseconds spent preparing 2 JDBC statements;
+    4029600 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    443500 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    12300 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:32:20.990  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 00:37:20.991  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 00:37:34.847  INFO 27684 --- [http-nio-8001-exec-9] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:37:34.861  INFO 27684 --- [http-nio-8001-exec-9] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    920800 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    437500 nanoseconds spent preparing 2 JDBC statements;
+    3050700 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    347800 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    9800 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:37:35.097  INFO 27684 --- [http-nio-8001-exec-10] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:37:35.108  INFO 27684 --- [http-nio-8001-exec-10] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    37600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    609800 nanoseconds spent preparing 2 JDBC statements;
+    2937300 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    355100 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    12000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:38:06.712  INFO 27684 --- [http-nio-8001-exec-1] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:38:06.719  INFO 27684 --- [http-nio-8001-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    354600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    267400 nanoseconds spent preparing 2 JDBC statements;
+    2046700 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    181300 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    3800 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:41:38.943  INFO 27684 --- [http-nio-8001-exec-2] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:41:38.950  INFO 27684 --- [http-nio-8001-exec-2] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    552800 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    199000 nanoseconds spent preparing 2 JDBC statements;
+    1457100 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    184900 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5500 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:42:20.994  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 00:43:46.349  INFO 27684 --- [http-nio-8001-exec-4] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:43:46.357  INFO 27684 --- [http-nio-8001-exec-4] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    519400 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    132700 nanoseconds spent preparing 2 JDBC statements;
+    1391900 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    196300 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    4300 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:45:16.521  INFO 27684 --- [http-nio-8001-exec-5] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:45:16.529  INFO 27684 --- [http-nio-8001-exec-5] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    479300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    258200 nanoseconds spent preparing 2 JDBC statements;
+    1884200 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    240800 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    4900 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:45:24.561  INFO 27684 --- [http-nio-8001-exec-6] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:45:24.568  INFO 27684 --- [http-nio-8001-exec-6] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    317200 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    178800 nanoseconds spent preparing 2 JDBC statements;
+    1641800 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    149700 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5500 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:47:20.997  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 00:52:20.999  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 00:52:36.138  INFO 27684 --- [http-nio-8001-exec-8] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 00:52:36.147  INFO 27684 --- [http-nio-8001-exec-8] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    525300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    207000 nanoseconds spent preparing 2 JDBC statements;
+    2045100 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    328300 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    8500 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 00:57:21.001  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 01:02:21.002  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 01:03:43.557  INFO 27684 --- [http-nio-8001-exec-9] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:03:43.566  INFO 27684 --- [http-nio-8001-exec-9] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    1592600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    192400 nanoseconds spent preparing 2 JDBC statements;
+    2083400 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    239900 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    7500 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:07:21.004  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 01:10:31.252  INFO 27684 --- [http-nio-8001-exec-10] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:10:31.265  INFO 27684 --- [http-nio-8001-exec-10] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    1075200 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    343400 nanoseconds spent preparing 2 JDBC statements;
+    2743000 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    366000 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    11700 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:10:44.646  INFO 27684 --- [http-nio-8001-exec-1] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:10:44.654  INFO 27684 --- [http-nio-8001-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    343000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    192500 nanoseconds spent preparing 2 JDBC statements;
+    1800200 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    159500 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    4600 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:11:19.549  INFO 27684 --- [http-nio-8001-exec-2] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:11:19.555  INFO 27684 --- [http-nio-8001-exec-2] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    336500 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    212500 nanoseconds spent preparing 2 JDBC statements;
+    1889900 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    154800 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    3800 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:11:22.960  INFO 27684 --- [http-nio-8001-exec-3] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:11:22.966  INFO 27684 --- [http-nio-8001-exec-3] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    270600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    164600 nanoseconds spent preparing 2 JDBC statements;
+    1264700 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    185900 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    3600 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:12:21.007  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 01:12:32.852  INFO 27684 --- [http-nio-8001-exec-4] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:12:32.864  INFO 27684 --- [http-nio-8001-exec-4] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    697900 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    344700 nanoseconds spent preparing 2 JDBC statements;
+    2785100 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    246500 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    8000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:13:27.251  INFO 27684 --- [http-nio-8001-exec-5] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:13:27.259  INFO 27684 --- [http-nio-8001-exec-5] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    419900 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    260500 nanoseconds spent preparing 2 JDBC statements;
+    2017200 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    257600 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    8800 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:13:58.534  INFO 27684 --- [http-nio-8001-exec-6] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:13:58.540  INFO 27684 --- [http-nio-8001-exec-6] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    357000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    205300 nanoseconds spent preparing 2 JDBC statements;
+    1614400 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    196500 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5100 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:14:03.313  INFO 27684 --- [http-nio-8001-exec-7] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:14:03.320  INFO 27684 --- [http-nio-8001-exec-7] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    402000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    179600 nanoseconds spent preparing 2 JDBC statements;
+    1717400 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    221400 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    4800 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:14:41.790  INFO 27684 --- [http-nio-8001-exec-8] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:14:41.798  INFO 27684 --- [http-nio-8001-exec-8] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    351600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    228600 nanoseconds spent preparing 2 JDBC statements;
+    1847500 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    240900 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    3800 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:14:56.069  INFO 27684 --- [http-nio-8001-exec-9] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:14:56.075  INFO 27684 --- [http-nio-8001-exec-9] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    295400 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    229200 nanoseconds spent preparing 2 JDBC statements;
+    1845900 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    161300 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    4700 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:15:11.017  INFO 27684 --- [http-nio-8001-exec-10] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:15:11.024  INFO 27684 --- [http-nio-8001-exec-10] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    405700 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    174000 nanoseconds spent preparing 2 JDBC statements;
+    1646700 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    173200 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5700 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:15:31.045  INFO 27684 --- [http-nio-8001-exec-1] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:15:31.051  INFO 27684 --- [http-nio-8001-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    378100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    168300 nanoseconds spent preparing 2 JDBC statements;
+    1427300 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    203300 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5100 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:16:05.877  INFO 27684 --- [http-nio-8001-exec-2] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:16:05.885  INFO 27684 --- [http-nio-8001-exec-2] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    407800 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    192000 nanoseconds spent preparing 2 JDBC statements;
+    1594600 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    171500 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    3900 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:17:21.009  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 01:19:53.757  INFO 27684 --- [http-nio-8001-exec-3] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:19:53.769  INFO 27684 --- [http-nio-8001-exec-3] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    647100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    230400 nanoseconds spent preparing 2 JDBC statements;
+    2661800 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    453300 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    7600 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:20:40.924  INFO 27684 --- [http-nio-8001-exec-4] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:20:40.932  INFO 27684 --- [http-nio-8001-exec-4] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    351600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    222700 nanoseconds spent preparing 2 JDBC statements;
+    1959700 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    298500 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5700 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:21:33.167  INFO 27684 --- [http-nio-8001-exec-5] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:21:33.179  INFO 27684 --- [http-nio-8001-exec-5] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    635400 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    312200 nanoseconds spent preparing 2 JDBC statements;
+    2821800 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    625200 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    8800 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:21:41.610  INFO 27684 --- [http-nio-8001-exec-6] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:21:41.621  INFO 27684 --- [http-nio-8001-exec-6] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    633600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    323600 nanoseconds spent preparing 2 JDBC statements;
+    2818200 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    331100 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    8400 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:22:21.011  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 01:26:57.006  INFO 27684 --- [http-nio-8001-exec-7] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:26:57.015  INFO 27684 --- [http-nio-8001-exec-7] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    516300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    215500 nanoseconds spent preparing 2 JDBC statements;
+    1747000 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    197200 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    6400 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:27:03.469  INFO 27684 --- [http-nio-8001-exec-8] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:27:03.478  INFO 27684 --- [http-nio-8001-exec-8] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    512000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    297100 nanoseconds spent preparing 2 JDBC statements;
+    2210600 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    221900 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    4400 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:27:21.015  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 01:27:22.758  INFO 27684 --- [http-nio-8001-exec-9] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:27:22.766  INFO 27684 --- [http-nio-8001-exec-9] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    580800 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    174900 nanoseconds spent preparing 2 JDBC statements;
+    1544700 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    245700 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    4400 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:29:55.034  INFO 27684 --- [http-nio-8001-exec-10] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:29:55.045  INFO 27684 --- [http-nio-8001-exec-10] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    640400 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    305700 nanoseconds spent preparing 2 JDBC statements;
+    2352100 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    347300 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    6400 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:30:21.999  INFO 27684 --- [http-nio-8001-exec-1] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:30:22.010  INFO 27684 --- [http-nio-8001-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    564800 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    293700 nanoseconds spent preparing 2 JDBC statements;
+    2919100 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    328600 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    8300 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:31:12.505  INFO 27684 --- [http-nio-8001-exec-2] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:31:12.512  INFO 27684 --- [http-nio-8001-exec-2] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    376500 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    180800 nanoseconds spent preparing 2 JDBC statements;
+    1769500 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    235200 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    11900 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:32:21.016  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 01:33:04.983  INFO 27684 --- [http-nio-8001-exec-3] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:33:04.991  INFO 27684 --- [http-nio-8001-exec-3] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    545600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    190900 nanoseconds spent preparing 2 JDBC statements;
+    1935700 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    221300 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5800 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:33:42.782  INFO 27684 --- [http-nio-8001-exec-4] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:33:42.790  INFO 27684 --- [http-nio-8001-exec-4] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    1085800 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    156600 nanoseconds spent preparing 2 JDBC statements;
+    1464900 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    210100 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    4500 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:34:12.010  INFO 27684 --- [http-nio-8001-exec-5] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:34:12.017  INFO 27684 --- [http-nio-8001-exec-5] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    390100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    236500 nanoseconds spent preparing 2 JDBC statements;
+    1733000 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    298600 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    9800 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:35:39.520  INFO 27684 --- [http-nio-8001-exec-6] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:35:39.526  INFO 27684 --- [http-nio-8001-exec-6] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    406500 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    194900 nanoseconds spent preparing 2 JDBC statements;
+    1492500 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    181400 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    3800 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:37:21.019  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 01:40:07.159  INFO 27684 --- [http-nio-8001-exec-7] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:40:07.166  INFO 27684 --- [http-nio-8001-exec-7] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    492000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    221500 nanoseconds spent preparing 2 JDBC statements;
+    1721200 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    197500 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    6300 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:41:10.846  INFO 27684 --- [http-nio-8001-exec-8] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:41:10.852  INFO 27684 --- [http-nio-8001-exec-8] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    371300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    150500 nanoseconds spent preparing 2 JDBC statements;
+    1425200 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    133300 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    4000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:41:58.650  INFO 27684 --- [http-nio-8001-exec-9] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:41:58.657  INFO 27684 --- [http-nio-8001-exec-9] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    321300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    202600 nanoseconds spent preparing 2 JDBC statements;
+    1722700 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    315500 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    6300 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:42:21.021  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 01:47:21.024  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 01:47:30.242  INFO 27684 --- [http-nio-8001-exec-10] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:47:30.254  INFO 27684 --- [http-nio-8001-exec-10] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    667700 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    362800 nanoseconds spent preparing 2 JDBC statements;
+    2770200 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    229200 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    9200 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:48:02.723  INFO 27684 --- [http-nio-8001-exec-1] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:48:02.732  INFO 27684 --- [http-nio-8001-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    1158900 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    210400 nanoseconds spent preparing 2 JDBC statements;
+    2193200 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    195100 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5500 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:48:28.260  INFO 27684 --- [http-nio-8001-exec-2] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:48:28.267  INFO 27684 --- [http-nio-8001-exec-2] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    311400 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    188700 nanoseconds spent preparing 2 JDBC statements;
+    1878000 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    138500 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    4000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:49:01.863  INFO 27684 --- [http-nio-8001-exec-3] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:49:01.869  INFO 27684 --- [http-nio-8001-exec-3] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    304300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    124800 nanoseconds spent preparing 2 JDBC statements;
+    1219600 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    133100 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    3500 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:49:41.945  INFO 27684 --- [http-nio-8001-exec-4] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:49:41.952  INFO 27684 --- [http-nio-8001-exec-4] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    373900 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    199300 nanoseconds spent preparing 2 JDBC statements;
+    1728000 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    203100 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5700 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:49:45.859  INFO 27684 --- [http-nio-8001-exec-5] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:49:45.866  INFO 27684 --- [http-nio-8001-exec-5] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    320600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    168000 nanoseconds spent preparing 2 JDBC statements;
+    1472800 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    142000 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:50:24.614  INFO 27684 --- [http-nio-8001-exec-6] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:50:24.619  INFO 27684 --- [http-nio-8001-exec-6] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    275400 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    133900 nanoseconds spent preparing 2 JDBC statements;
+    1206700 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    134900 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    3900 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:51:11.328  INFO 27684 --- [http-nio-8001-exec-7] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:51:11.335  INFO 27684 --- [http-nio-8001-exec-7] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    335800 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    223600 nanoseconds spent preparing 2 JDBC statements;
+    1755300 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    238200 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    4700 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:51:22.808  INFO 27684 --- [http-nio-8001-exec-8] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:51:22.814  INFO 27684 --- [http-nio-8001-exec-8] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    366700 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    152900 nanoseconds spent preparing 2 JDBC statements;
+    1556200 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    144900 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    4600 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:52:21.026  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 01:53:07.810  INFO 27684 --- [http-nio-8001-exec-10] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:53:07.816  INFO 27684 --- [http-nio-8001-exec-10] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    405500 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    174700 nanoseconds spent preparing 2 JDBC statements;
+    1487200 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    144800 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5900 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:53:58.218  INFO 27684 --- [http-nio-8001-exec-1] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 01:53:58.223  INFO 27684 --- [http-nio-8001-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    325600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    185300 nanoseconds spent preparing 2 JDBC statements;
+    1346600 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    138800 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    6000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 01:57:21.029  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 02:01:11.603  INFO 27684 --- [http-nio-8001-exec-2] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 02:01:11.610  INFO 27684 --- [http-nio-8001-exec-2] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    1097700 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    181200 nanoseconds spent preparing 2 JDBC statements;
+    2070400 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    174700 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    5400 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 02:01:43.582  INFO 27684 --- [http-nio-8001-exec-3] c.f.e.security.JwtAuthenticationFilter   : JWT authentication skipped for login
+2020-04-02 02:01:43.587  INFO 27684 --- [http-nio-8001-exec-3] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    293000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    119200 nanoseconds spent preparing 2 JDBC statements;
+    1299300 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    120200 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 1 collections);
+    4100 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2020-04-02 02:02:21.032  INFO 27684 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

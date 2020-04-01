@@ -72,4 +72,7 @@ public class Question extends Audit implements Serializable{
 	
 	@OneToMany(mappedBy ="question"  ,cascade = {CascadeType.ALL}, fetch = FetchType.EAGER,orphanRemoval = true)
 	private List<Answer> answers;
+	
+	@Column(name ="is_deleted")
+	private boolean isDeleted;
 }

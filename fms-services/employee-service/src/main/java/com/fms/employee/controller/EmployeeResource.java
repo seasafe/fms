@@ -3,8 +3,7 @@
  */
 package com.fms.employee.controller;
 
-import java.util.Collection;
-import java.util.Set;
+import java.util.List;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
@@ -69,6 +68,12 @@ public class EmployeeResource {
 		}
 		return employeeService.getEmployeeByRole("PMO",pageable);
 		
+	}
+	
+	@PostMapping("/employeeslist")
+	@PreAuthorize("permitAll()")
+	public Employee[] getEmployeeList(@RequestBody List<Long> employeeIds) {
+		return employeeService.getEmployeeList(employeeIds);
 	}
 	
 }

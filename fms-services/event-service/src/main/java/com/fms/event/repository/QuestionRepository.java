@@ -23,7 +23,7 @@ import com.fms.event.model.Question;
 @Repository
 public interface QuestionRepository extends JpaRepository<Question, Long>,JpaSpecificationExecutor<Question>{
 
-	@Query("from Question q left join fetch q.feedbackType left join fetch q.answers where q.feedbackType.type =:feedbackType")
+	@Query("from Question q left join fetch q.feedbackType where q.feedbackType.type =:feedbackType and q.isDeleted=0")
 	Optional<List<Question>> findAllByFeedBackType(String feedbackType);
 	
 	Page<Question> findAll(@SuppressWarnings("rawtypes") Specification spec,Pageable page);

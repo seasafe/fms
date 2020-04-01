@@ -1,0 +1,9 @@
+<html>
+<body>
+    <h3>Dear ${employeeName}!</h3>
+    <p>Please provide your valuable feedback for the event ${eventName} held on ${eventDate} by clicking the below url </p>
+    <a href="${url}"> Feedback for event - ${eventName}</a>
+    <p>Thanks & Regards,</p>
+    <h5>Cognizant OutReach Team</h5>
+</body>
+</html>

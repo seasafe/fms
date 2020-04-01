@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     const currentUser = this.auth.loggedInUser;
     console.log('login component ', this.returnUrl, ' user = ', currentUser);
     if (currentUser) {
-      this.router.navigate([this.returnUrl]);
+      this.router.navigateByUrl(this.returnUrl);
       return;
     }
     this.loginForm = this.fb.group(
@@ -50,12 +50,14 @@ export class LoginComponent implements OnInit {
         console.log('user = ', user, ' is admin - ', this.auth.isAdmin);
         this.notificationService.success('Login Successfull',
           Constants.NOTIFICATION_STIKY_AUTOCLOSE_OPTIONS);
-
-
-
-        // if (this.auth.isAdmin) {
-        this.router.navigate(['/home']);
-        // }
+        console.log('isReturnUrl Present? ' + this.returnUrl);
+        if (this.returnUrl && this.returnUrl !== '') {
+          console.log('isReturnUrl Present' + this.returnUrl);
+          this.router.navigateByUrl(this.returnUrl);
+        } else {
+          console.log('isReturnUrl absent' + this.returnUrl);
+          this.router.navigate(['/home']);
+        }
       });
   }
 

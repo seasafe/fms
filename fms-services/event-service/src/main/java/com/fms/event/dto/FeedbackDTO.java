@@ -4,6 +4,8 @@
 package com.fms.event.dto;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.NonNull;
 
 /**
@@ -11,12 +13,15 @@ import lombok.NonNull;
  *
  */
 @Data
+@EqualsAndHashCode
+@NoArgsConstructor
 public class FeedbackDTO {
 	private Long feedbackId;
-	private @NonNull String answer;
+	private String answer;
 	private Long employeeId;
 	private String employeeName;
 	private @NonNull String eventRefId;
-	private @NonNull Long questionId;
+	private Long questionId;
+	private String employeeEmail;
 	
 }

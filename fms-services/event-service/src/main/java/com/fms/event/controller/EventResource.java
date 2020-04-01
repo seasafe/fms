@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.annotation.JsonView;
@@ -32,6 +33,7 @@ import com.fms.event.dto.FeedbackDTO;
 import com.fms.event.dto.QuestionDTO;
 import com.fms.event.jackson.View;
 import com.fms.event.model.Event;
+import com.fms.event.model.Feedback;
 import com.fms.event.model.FeedbackType;
 import com.fms.event.service.EventService;
 import com.fms.event.service.FeedbackService;
@@ -43,7 +45,7 @@ import com.fms.event.service.QuestionService;
  *
  */
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RequestMapping("/events-api")
 public class EventResource {
 
@@ -106,6 +108,10 @@ public class EventResource {
 	public void deleteQuestion(@PathVariable("questionId") Long questionId){
 		questionService.deleteQuestion(questionId);
 	}
+	@GetMapping("/feedback/questionsbytype")
+	public List<QuestionDTO> getQuestionsByType(@RequestParam String type){
+		return questionService.getQuestionByType(type);
+	}
 	
 	@PostMapping("/feedback/questions")
 	@PreAuthorize("hasRole('ROLE_ADMIN')")
@@ -114,14 +120,24 @@ public class EventResource {
 	}
 	
 	@PostMapping("/feedback")
-	public Long saveFeedback(@RequestBody FeedbackDTO feedbackDTO,Authentication authentication){
-		return feedbackService.saveFeedback(feedbackDTO, authentication);
+	public List<Long> saveFeedback(@RequestBody List<FeedbackDTO> feedbackDTOs,Authentication authentication){
+		return feedbackService.saveFeedback(feedbackDTOs, authentication);
 	}
 	
 	@GetMapping("/feedback/type")
 	@PreAuthorize("hasRole('ROLE_ADMIN')")
 	public List<FeedbackType> getFeedbackType(){
 		return questionService.getAllFeedbackType();
+	}
+	@PostMapping("/feedback/validatefeedback")
+	public Feedback validateFeedback(@RequestBody FeedbackDTO feedbackDTO,Authentication authentication){
+		return feedbackService.validateFeedback(feedbackDTO, authentication);
+	}
+	
+	@PostMapping("/sendfeedbackrequest")
+	@PreAuthorize("hasRole('ROLE_ADMIN')")
+	public void sendFeedbackRequest(@RequestBody List<Long> eventIds){
+		feedbackService.sendFeedbackRequest(eventIds);
 	}
 	
 }

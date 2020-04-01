@@ -13,4 +13,5 @@ export class QuestionDTO {
     freeText: boolean;
     multiAnsAllowed: boolean;
     customQuestion: boolean;
+    selectedAnswer: string;
 }

@@ -1,0 +1,65 @@
+<header>
+    <app-header></app-header>
+</header>
+
+<main>
+    <div class="container-fluid">
+
+        <div class="jumbotron">
+            <div class="container">
+                <div class="card ">
+                    <div class="card-header" style="text-align: center;">
+                        {{eventDesc}}
+                    </div>
+                </div>
+                <br>
+
+                <form class="form-horizontal" #fbForm="ngForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group" *ngFor="let question of questionList">
+                        <div class="card ">
+                            <div class="card-header" style="background-color: #1036A0;color: white;">
+                                {{question.question}}
+                            </div>
+
+                            <div class="card-body">
+                                <div *ngIf="question.freeText">
+                                    <textarea id="answer" name="answer" style="width: 100%;"
+                                        [(ngModel)]="question.selectedAnswer"></textarea>
+                                </div>
+                                <div *ngIf="question.answers">
+                                    <div *ngFor="let ans of question.answers" class="form-check form-check-inline">
+
+                                        <label>
+                                            <input *ngIf="!question.multiAnsAllowed" type="radio"
+                                                [name]="'ans'+question.questionId" class="card-input-element d-none"
+                                                [id]="ans.questionAnswerId" [value]="ans.answer"
+                                                [(ngModel)]="question.selectedAnswer" required>
+                                            <input *ngIf="question.multiAnsAllowed" type="checkbox"
+                                                [name]="'ans'+question.questionId" class="card-input-element d-none"
+                                                [value]="ans.answer"
+                                                (change)="onChange(ans.answer, $event.target.checked,question.questionId)"
+                                                #multiCheckBox required>
+                                            <div
+                                                class="card card-body bg-light d-flex flex-row justify-content-between align-items-center">
+                                                {{ans.answer}}
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary mr-1" [disabled]="!fbForm.valid" type="submit">SAVE</button>
+                        <button class="btn btn-dark mr-1" type="button" (click)="resetForm(fbForm)">RESET</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <app-footer></app-footer>
+</footer>

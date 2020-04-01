@@ -33,5 +33,7 @@ public interface FeedbackRepository extends JpaRepository<Feedback, Long>,JpaSpe
 	Optional<List<Feedback>> findByEventRefId(String eventRefId);
 	
 	Page<Feedback> findAll(@SuppressWarnings("rawtypes") Specification spec,Pageable page);
+
+	List<Feedback> findByEvent_EventIdAndEmployee_EmployeeId(Long eventId, Long employeeId);
 	
 }

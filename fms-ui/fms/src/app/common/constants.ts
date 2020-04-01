@@ -12,6 +12,9 @@ export class Constants {
     static GET_FB_TYPE_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback/type';
     static SAVE_QUESTION_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback/questions';
     static DELETE_QUESTION_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback/questions';
+    static VALIDATE_FB_SUBMISSION_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback/validatefeedback';
+    static GET_QUESTIONS_BY_TYPE_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback/questionsbytype';
+    static SAVE_FEEDBACK_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback';
     static NOTIFICATION_OPTIONS = {
         autoClose: true,
         keepAfterRouteChange: false
