@@ -15,6 +15,7 @@ export class Constants {
     static VALIDATE_FB_SUBMISSION_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback/validatefeedback';
     static GET_QUESTIONS_BY_TYPE_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback/questionsbytype';
     static SAVE_FEEDBACK_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback';
+    static SEND_EVENT_FEEDBACK_REQUEST_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'sendfeedbackrequest';
     static NOTIFICATION_OPTIONS = {
         autoClose: true,
         keepAfterRouteChange: false

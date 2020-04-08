@@ -27,8 +27,8 @@ export class FeedbackComponent implements OnInit {
   feedbackDTO: FeedbackDTO;
   questionList: QuestionDTO[];
   feedbacks: FeedbackDTO[] = [];
-  multiAnsArray: string[] = [];
-
+  multiAnsMap = new Map();
+  isPop = false;
   constructor(private http: BasehttpService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -101,20 +101,16 @@ export class FeedbackComponent implements OnInit {
   onChange(value: string, ischecked: boolean, questionId: number) {
     console.log('value' + value + 'ischecked' + ischecked + 'questionId' + questionId);
     if (ischecked) {
-      this.multiAnsArray.push(value);
+      this.populateMultiAns(questionId, value, false);
       this.questionList.forEach(q => {
         if (q.questionId === questionId) {
-          q.selectedAnswer = this.multiAnsArray.toString();
+          q.selectedAnswer = this.multiAnsMap.get(questionId)?.toString();
         }
       });
-      //this.questionList[questionId].selectedAnswer = this.multiAnsArray.toString();
     } else {
-      const index = this.multiAnsArray.indexOf(value, 0);
-      if (index > -1) {
-        this.multiAnsArray.splice(index, 1);
-      }
+      this.populateMultiAns(questionId, value, true);
     }
-    console.log('this.multiAnsArray' + this.multiAnsArray);
+    console.log('this.multiAnsMap ' + JSON.stringify(this.multiAnsMap));
   }
 
   resetForm(form: NgForm) {
@@ -125,4 +121,26 @@ export class FeedbackComponent implements OnInit {
       }
     });
   }
+
+  populateMultiAns(questionId: number, value: string, isPop: boolean) {
+    if (this.multiAnsMap.has(questionId)) {
+      const multArr = this.multiAnsMap.get(questionId);
+      if (!isPop) {
+        multArr.push(value);
+      } else {
+        const index = multArr.indexOf(value, 0);
+        if (index > -1) {
+          multArr.splice(index, 1);
+        }
+      }
+      this.multiAnsMap.set(questionId, multArr);
+      console.log('this.multiAnsMap.set ' + questionId + ' - ' + multArr + ' - map size - ' + this.multiAnsMap.size);
+    } else {
+      const arr: string[] = [];
+      arr.push(value);
+      this.multiAnsMap.set(questionId, arr);
+      console.log('this.multiAnsMap.set ' + questionId + ' - ' + arr + ' - map size - ' + this.multiAnsMap.size);
+    }
+  }
 }
+
