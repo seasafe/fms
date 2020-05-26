@@ -48,14 +48,14 @@ export class FeedbackComponent implements OnInit {
       this.eventRefId = convertedObject.eventRefId;
       this.eventName = convertedObject.eventName;
       this.eventDate = convertedObject.eventDate;
-      this.eventDesc = 'Feedback Request for ' + this.eventName + '  on ' + this.eventDate;
+      this.eventDesc = 'Feedback Request for ' + this.eventName + '  on ' + this.eventDate + ' type = ' + this.type;
 
       this.http.post(Constants.VALIDATE_FB_SUBMISSION_URL, this.getFeedbackDTO()).subscribe((data) => {
         if (data) {
           this.router.navigate(['feedback-taken']);
         } else {
 
-          this.getDisplayQuestions('Not-Participated');
+          this.getDisplayQuestions(this.type);
         }
       });
     });

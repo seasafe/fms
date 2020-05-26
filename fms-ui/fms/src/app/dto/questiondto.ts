@@ -14,4 +14,5 @@ export class QuestionDTO {
     multiAnsAllowed: boolean;
     customQuestion: boolean;
     selectedAnswer: string;
+    total: string;
 }

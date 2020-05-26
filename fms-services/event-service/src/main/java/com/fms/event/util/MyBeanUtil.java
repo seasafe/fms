@@ -6,8 +6,11 @@ package com.fms.event.util;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 
 import org.springframework.beans.BeanUtils;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 
 /**
  * @author kesah
@@ -37,5 +40,11 @@ public class MyBeanUtil {
 
 		return list;
 	}
+	
+   public static <V,T> Page<T> getPageableDTO(Page<V> v, Class<T> targetClass){
+	 List<V> entityList =   v.getContent();
+	   List<T> dtoList = copyProperties(entityList, targetClass);
+	  return new PageImpl<T>(dtoList, v.getPageable(), v.getTotalElements());
+   }
 	
 }

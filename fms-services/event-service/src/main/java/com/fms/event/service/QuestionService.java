@@ -3,26 +3,26 @@
  */
 package com.fms.event.service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 import javax.transaction.Transactional;
 
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
+import com.fms.event.dto.PageSearch;
 import com.fms.event.dto.QuestionDTO;
 import com.fms.event.model.FeedbackType;
 import com.fms.event.model.Question;
-import com.fms.event.repository.EventRepository;
 import com.fms.event.repository.FeedbackTypeRepository;
 import com.fms.event.repository.QuestionRepository;
 import com.fms.event.util.MyBeanUtil;
-
-import lombok.extern.slf4j.Slf4j;
+import com.fms.event.util.QuestionSpecificationsBuilder;
 
 /**
  * @author Kesavalu
@@ -30,11 +30,7 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Service
 @Transactional
-@Slf4j
 public class QuestionService {
-
-	@Autowired
-	private EventRepository eventRepo;
 
 	@Autowired
 	private QuestionRepository questionRepo;
@@ -46,9 +42,16 @@ public class QuestionService {
 	 * @param pageable
 	 * @return
 	 */
-	public List<QuestionDTO> getAllQuestion() {
-		List<Question> questions = questionRepo.findAll();
-		return MyBeanUtil.copyProperties(questions, QuestionDTO.class);
+	public Page<QuestionDTO> getAllQuestion(Pageable pageable,PageSearch<QuestionDTO> pageSearch) {
+		Specification<Question> questionSpecification = null;
+		Page<Question> questions =null;
+		if(null != pageSearch) {
+				questionSpecification = QuestionSpecificationsBuilder.build(pageSearch.getSearchCriteria(),pageSearch.isGlobalSearch());
+				questions = questionRepo.findAll(questionSpecification,pageable );	
+		}else {
+		questions = questionRepo.findAll(pageable );
+		}
+		return MyBeanUtil.getPageableDTO(questions, QuestionDTO.class);
 	}
 
 	public List<QuestionDTO> getQuestionByType(String feedbackType) {

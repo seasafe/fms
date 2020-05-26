@@ -42,6 +42,7 @@ public class QuestionDTO implements Serializable{
 	private boolean isMultiAnsAllowed;
 	private boolean isCustomQuestion;
 	private List<Answer> answers;
+	private String total;
 	
 	/**
 	 * @param feedbackType the feedbackType to set

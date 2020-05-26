@@ -32,6 +32,7 @@ public class EventSummaryBatchConfig {
 	public ItemReader<EventSummaryDTO> excelEventSummaryReader() throws FileNotFoundException {
 		EventSummaryReader<EventSummaryDTO> reader = new EventSummaryReader<>();
 		reader.setLinesToSkip(1);
+		reader.setUseDataFormatter(true);
 		reader.setRowMapper(eventSummaryExcelRowMapper());
 		
 	    return reader;

@@ -13,6 +13,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 
 import com.fms.event.EventServiceApplicationTests;
 import com.fms.event.dto.QuestionDTO;
@@ -64,9 +65,9 @@ class QuestionServiceTest extends EventServiceApplicationTests {
 	@Test
 	@Order(3)
 	void testGetAllQuestion() {
-		List<QuestionDTO> questions = questionService.getAllQuestion();
+		Page<QuestionDTO> questions = questionService.getAllQuestion(null,null);
 		System.out.println(questions);
-		Assert.notNull(questions.size());
+		Assert.notNull(questions.getSize());
 	}
 
 	/**

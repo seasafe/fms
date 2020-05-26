@@ -127,7 +127,7 @@ export class QuestionsComponent implements OnInit {
 
   deleteQuestion(): void {
     if (this.question && this.question.questionId !== 0) {
-      this.http.delete(Constants.DELETE_QUESTION_URL + '/' + this.question.questionId).subscribe((ques: QuestionDTO) => {
+      this.http.post(Constants.DELETE_QUESTION_URL + '/' + this.question.questionId).subscribe((ques: QuestionDTO) => {
         this.question = new QuestionDTO();
         this.questionForm.reset();
         this.router.navigate(['/admin']);

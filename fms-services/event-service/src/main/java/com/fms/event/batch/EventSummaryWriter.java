@@ -36,8 +36,9 @@ public class EventSummaryWriter implements ItemWriter<Event> {
 		ExampleMatcher matcher = ExampleMatcher.matching().withIgnorePaths("eventId").withMatcher("eventRefId",ExampleMatcher.GenericPropertyMatchers.ignoreCase());
 		items.forEach( item ->{
 			Example<Event> example = Example.of(item,matcher) ;
-			
-			if(!eventRepo.exists(example))
+			boolean isAlreadyExists = eventRepo.exists(example);
+			log.info("Event Ref Id "+item.getEventRefId()+ " - isExists in DB - "+isAlreadyExists);
+			if(!isAlreadyExists)
 			{
 				eventRepo.save(item);
 			}

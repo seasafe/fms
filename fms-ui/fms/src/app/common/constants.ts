@@ -9,6 +9,7 @@ export class Constants {
     static ASSIGN_PMO_URL = Constants.DOMAIN_URL + Constants.EMPLOYEE_BASE_API_URL + 'assignRole';
     static GET_PMO_URL = Constants.DOMAIN_URL + Constants.EMPLOYEE_BASE_API_URL + 'pmos';
     static GET_FB_QUESTION_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback/questions';
+    static GET_FB_QUESTION_SEARCH_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback/questions/search';
     static GET_FB_TYPE_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback/type';
     static SAVE_QUESTION_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback/questions';
     static DELETE_QUESTION_URL = Constants.DOMAIN_URL + Constants.EVENTS_BASE_API_URL + 'feedback/questions';

@@ -26,6 +26,6 @@ public interface QuestionRepository extends JpaRepository<Question, Long>,JpaSpe
 	@Query("from Question q left join fetch q.feedbackType where q.feedbackType.type =:feedbackType and q.isDeleted=0")
 	Optional<List<Question>> findAllByFeedBackType(String feedbackType);
 	
-	Page<Question> findAll(@SuppressWarnings("rawtypes") Specification spec,Pageable page);
+	//Page<Question> findAll(@SuppressWarnings("rawtypes") Specification spec,Pageable page);
 	
 }

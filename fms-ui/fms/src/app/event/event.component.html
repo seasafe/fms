@@ -49,92 +49,123 @@
     </nav>
     <div class="container-fluid row ml-3 border border-info "
         style="background-color: #e6e6e6;height: auto !important;">
-        <div class="container-fluid row" style="height: auto !important;">
-            <div class="col-sm-2  text-center  p-2">
-                <button type="button" class="btn btn-danger">CLEAR FILTER</button>
-
-            </div>
-            <div class="col-sm-3 text-center  p-2 ">
-                <button type="button" class="btn btn-success" style="margin:0px;"><i
-                        class="fa fa-file-excel-o"></i>DOWNLOAD EXCEL</button>
-            </div>
-        </div>
-
         <div class="container">
-            <table class="table table-hover table-bordered border"
-                style="border: none; background-color: white !important;">
-                <thead>
+            <button type="button" class="btn btn-danger m-2 float-right">CLEAR FILTER</button>
+            <button type="button" class="btn btn-success m-2 float-right">DOWNLOAD EXCEL</button>
+        </div>
+        <div class="container">
+
+
+            <p-table #dt [columns]="cols" [value]="events" [paginator]="true" [rows]="5" (onLazyLoad)="loadLazy($event)"
+                [responsive]="true" [lazy]="false" [totalRecords]="totalRecords" [loading]="loading">
+                <ng-template pTemplate="caption">
+                    <form class="form-inline">
+                        <i class="fas fa-search float-right" aria-hidden="true"></i>
+                        <input pInputText size="10" class="form-control form-control-sm ml-3 w-75 float-right"
+                            type="text" placeholder="Global Search" aria-label="Search"
+                            (input)="dt.filterGlobal($event.target.value, 'contains')"
+                            [value]="dt.filters['global'] ? dt.filters['global'].value : ''">
+                    </form>
+                </ng-template>
+                <ng-template pTemplate="header" let-columns>
                     <tr>
-                        <th>Action</th>
-                        <th>Event ID</th>
-                        <th>Month</th>
-                        <th>Base Location</th>
-                        <th>Council name</th>
-                        <th>Beneficiary Name</th>
+                        <th *ngFor="let col of columns | slice:0:6;" [pSortableColumn]="col.field">
+                            {{col.header}}
+                            <p-sortIcon [field]="col.field" ariaLabel="Activate to sort"
+                                ariaLabelDesc="Activate to sort in descending order"
+                                ariaLabelAsc="Activate to sort in ascending order"></p-sortIcon>
+                        </th>
+
                     </tr>
-                </thead>
-                <tbody *ngFor="let event of events">
                     <tr>
-                        <td rowspan="9"> View</td>
-                        <td>{{event.eventRefId}}</td>
-                        <td>{{event.eventDate | date:'MMM' }}</td>
-                        <th>{{event.baseLocation}}</th>
-                        <th>{{event.council}}</th>
-                        <th>{{event.beneficiary}}</th>
+                        <th *ngFor="let col of columns  | slice:0:6">
+                            <input pInputText type="text" class="form-control input-normal"
+                                (input)="dt.filter($event.target.value, col.field, 'contains')"
+                                [value]="dt.filters[col.field] ? dt.filters[col.field].value : ''">
+                            <!--  <input *ngSwitchCase="'totalAnswers'" pInputText type="text"
+                            (input)="dt.filter($event.target.value, col.field, 'contains')"
+                            [value]="dt.filters[col.field] ? dt.filters[col.field].value : ''"
+                            style="width:auto">
+                        <input *ngSwitchCase="'type'" pInputText type="text"
+                            (input)="dt.filter($event.target.value, col.field, 'contains')"
+                            [value]="dt.filters[col.field] ? dt.filters[col.field].value : ''" 
+                            style="width:auto"> -->
+                        </th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-rowData let-columns="columns">
+                    <tr>
+                        <td rowspan="9" align="center"> <button class="btn btn-primary" (click)="editEvent(rowData)">
+                                <mdb-icon far icon="sun"></mdb-icon>Edit
+                            </button></td>
+                        <td *ngFor="let col of columns  | slice:1:6" style="font-weight: bold;">
+                            <span *ngIf="col.header == 'Month'; else
+                                elseBlock">{{rowData[col.field] | date:"MMM"}}</span>
+                            <ng-template #elseBlock>{{rowData[col.field]}}</ng-template>
+
+                        </td>
+                    </tr>
+
+                    <tr *ngFor="let col of columns  | slice:6:14">
+
+                        <td colspan="2" style="font-weight: bold;">{{col.header}}</td>
+                        <td colspan="3"><span *ngIf="col.header == 'Month'; else
+                            elseBlock">{{rowData[col.field] | date:"MMM"}}</span>
+                            <ng-template #elseBlock>{{rowData[col.field]}}</ng-template>
+                        </td>
+                    </tr>
+                    <!-- <tr>
+
+                        <td colspan="2" style="font-weight: bold;">Event Name</td>
+                        <td colspan="3">{{rowData[columns[6].field]}}</td>
                     </tr>
                     <tr>
 
-                        <td colspan="2">Event Name</td>
-                        <td colspan="2">{{event.eventName}}</td>
+                        <td colspan="2" style="font-weight: bold;">Event Date</td>
+                        <td colspan="3">{{rowData[columns[7].field]}}</td>
                     </tr>
                     <tr>
 
-                        <td colspan="2">Event Date</td>
-                        <td colspan="2">{{event.eventDate}}</td>
-                    </tr>
-                    <tr>
-
-                        <td colspan="2">Business Unit</td>
-                        <td colspan="2">{{event.businessUnit}}</td>
+                        <td colspan="2" style="font-weight: bold;">Business Unit</td>
+                        <td colspan="3">{{rowData[columns[8].field]}}</td>
                     </tr>
                     <tr>
 
                         <td colspan="2">Status</td>
-                        <td colspan="2">{{event.status}}</td>
+                        <td colspan="3">{{rowData[columns[9].field]}}</td>
                     </tr>
                     <tr>
 
                         <td colspan="2">Venue Address</td>
-                        <td colspan="2">{{event.venueAddress}}</td>
+                        <td colspan="3">{{rowData[columns[10].field]}}</td>
                     </tr>
                     <tr>
 
                         <td colspan="2">Total Volunteers</td>
-                        <td colspan="2">{{event.totalVolunteers}}</td>
+                        <td colspan="3">{{rowData[columns[11].field]}}</td>
                     </tr>
                     <tr>
 
                         <td colspan="2">Total Volunteer hours</td>
-                        <td colspan="2">{{event.totalVolunteerHours}}</td>
+                        <td colspan="3">{{rowData[columns[12].field]}}</td>
                     </tr>
                     <tr>
 
-                        <td colspan="2">Total travel hours</td>
-                        <td colspan="2">{{event.totalTravelHours}}</td>
+                        <td colspan="2">{{rowData[columns[13].field]}}</td>
+                        <td colspan="3">{{rowData[columns[13].field]}}</td>
+                    </tr> -->
+
+                </ng-template>
+                <ng-template pTemplate="emptymessage" let-columns>
+                    <tr>
+                        <td [attr.colspan]="6">
+                            No records found
+                        </td>
                     </tr>
-
-
-                </tbody>
-            </table>
+                </ng-template>
+            </p-table>
         </div>
-
-
-
-
-
-
     </div>
-
 </main>
 
 <footer>

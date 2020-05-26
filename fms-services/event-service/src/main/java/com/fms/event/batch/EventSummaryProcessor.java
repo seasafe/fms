@@ -43,7 +43,14 @@ public class EventSummaryProcessor implements ItemProcessor<EventSummaryDTO, Eve
 		event.setCategory(item.getCategory());
 		event.setEventName(item.getEventName());
 		event.setEventDesc(item.getEventDesc());
-		event.setEventDate(Date.from(LocalDate.parse(item.getEventDate(), DateTimeFormatter.ofPattern("dd-MM-yy")).atStartOfDay(ZoneId.systemDefault()).toInstant()));
+		try {
+			System.out.println(item.getEventDate());
+			event.setEventDate(Date.from(LocalDate.parse(item.getEventDate(), DateTimeFormatter.ofPattern("dd-MM-yy")).atStartOfDay(ZoneId.systemDefault()).toInstant()));
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+			event.setEventDate(new Date());
+		}
 		event.setTotalVolunteerHours((int) Double.parseDouble(item.getTotalVolunteerHours()));
 		event.setTotalVolunteers((int) Double.parseDouble(item.getTotalVolunteers()));
 		event.setTotalTravelHours((int) Double.parseDouble(item.getTotalTravelHours()));
